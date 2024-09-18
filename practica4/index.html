@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа №3</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="roottag"> 
+        <nav class="one">
+            <ul>
+              <li><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
+              <li><a href="https://dzen.ru/a/YW_Vl8iAnDEdYUtU">Особенности характера</a></li>
+              <li><a href="https://dzen.ru/a/YE5OdQp9UWVKTR21">Как выбрать?</a></li>
+              <li><a href="https://dzen.ru/a/Y2yV92akF2arEAaP">Возможные болезни и разведение</a></li>
+              <li><a href="https://dzen.ru/a/ZVpfkh4b0UGtCVzY">Разведение</a></li>
+            </ul>
+        </nav>
+        <div class="fig">
+            <div class="figtext">
+                <h1>Практическая работа № 4</h1>
+                <h3>Золотая шиншила</h3>
+                <h5>Работу выполнил студент группы ИКПИ-21 Манаков</h5>
+            </div>        
+        </div>
+        <div class="wht">
+            <p class="whttext">
+                Золотая шиншилла — это разновидность шиншиллы, отличающаяся своим уникальным окрасом. В отличие от стандартных шиншилл, которые имеют серый мех, золотые шиншиллы имеют золотисто-желтый цвет шерсти с легким металлическим блеском, что делает их особенно привлекательными.
+                <!-- Описание шиншиллы -->
+            </p>
+        </div>
+        <div class="fig2"></div>
+    </div>
+    <div class="ret">
+        <h2>Упражнение 1</h2>
+        <form name="button1" class="form-center">
+            <input type="button" value="ИНФО" onclick="show_information();">
+        </form>
+
+        <h2>Упражнение 2</h2>
+        <form name="button2" class="form-center">
+            <input type="number" min="3.00" max="5.00" style="width: 150px;" name="sqr" placeholder="Средний балл">
+            <input type="button" value="Показать средний балл" onclick="show_information2(button2.sqr);">
+        </form>
+
+        <h2>Упражнение 3</h2>
+        <h1 class="radio_button">Опрос</h1>
+        <form name="questionnaire" class="radio_button">
+            <input type="text" name="family" placeholder="Фамилия"><br>
+            <label>Оценка по дисциплине «Программирование»:</label><br>
+            <input type="radio" name="radio1" value="5" checked="checked"><label>Отлично</label><br>
+            <input type="radio" name="radio1" value="4"><label>Хорошо</label><br>
+            <input type="radio" name="radio1" value="3"><label>Удовлетворительно</label><br>
+            <label>Оценка по дисциплине «Математика»:</label><br> 
+            <input type="radio" name="radio2" value="5" checked="checked"><label>Отлично</label><br>
+            <input type="radio" name="radio2" value="4"><label>Хорошо</label><br>
+            <input type="radio" name="radio2" value="3"><label>Удовлетворительно</label><br>
+            <label>Оценка по дисциплине «Физика»:</label><br>
+            <input type="radio" name="radio3" value="5" checked="checked"><label>Отлично</label><br>
+            <input type="radio" name="radio3" value="4"><label>Хорошо</label><br>
+            <input type="radio" name="radio3" value="3"><label>Удовлетворительно</label><br>
+            <input type="button" value="Отправить" onclick="send(questionnaire.family, questionnaire.radio1, questionnaire.radio2, questionnaire.radio3);">
+        </form>
+    </div>
+</body>
+</html>

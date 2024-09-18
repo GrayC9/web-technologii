@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическая работа: Подключение стилей CSS</title>
+    <style>
+        /* Способ 2: Стили через тег <style> в <head> */
+        div {
+            width: 200px;
+            background-color: #cfcf32;
+            padding: 5px;
+            padding-right: 20px;
+            border: solid 1px black;
+            float: left;
+        }
+        #menu {
+            background-color: #999;
+            color: azure;
+        }
+        .menu2 {
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+    <!-- Способ 3: Подключение внешнего файла стилей -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Польза овощей и фруктов</h1>
+
+    <!-- Способ 1: Подключение стилей через атрибут style -->
+    <p style="margin: 10px 0; padding: 8px; border: 1px solid #999; color: blueviolet;">
+        Значение овощей, фруктов и ягод в питании человека общеизвестно. Они вкусны, питательны, полезны для здоровья. Овощи и фрукты не обладают большой энергетической ценностью, но являются поставщиками важнейших нутриентов...
+    </p>
+
+    <p id="menu">Овощи и фрукты – основные поставщики пищевых волокон...</p>
+    <p class="menu2">Рекомендуется потреблять не менее 400 граммов овощей и фруктов ежедневно...</p>
+
+    <div>Овощи и фрукты – действительно кладезь витаминов и минералов...</div>
+
+    <p class="paragr">Мало кто знает, что фрукты и овощи содержат минорные компоненты, которые служат защитой организма...</p>
+
+</body>
+</html>
